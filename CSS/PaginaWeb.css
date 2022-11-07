@@ -61,6 +61,12 @@ ul.topnav {
 /*Para que el menu se quede flotando en la izquierda*/
 ul.topnav li {float: left;}
 
+/*Color de la linea en la animacion*/
+.li_menu > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: #57a639;
+}
+
 /*Menu letra mas recuadro con color*/
 ul.topnav li a {
     display: block;
@@ -70,14 +76,8 @@ ul.topnav li a {
     text-decoration: none;
 }
 
-/*Color de la linea en la animacion*/
-ul.tonopav li > a:hover::after, li > a.active-nav::after {
-    width: 100%;
-    background: #57a639;
-}
-
 /*Color texto despues de poner el cursor encima*/
-ul.tonopav li > a:hover {
+.li_menu > a:hover {
     color: #57a639;
 }
 
