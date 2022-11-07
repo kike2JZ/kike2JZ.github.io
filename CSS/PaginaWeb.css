@@ -1,0 +1,198 @@
+/*Color fondo y estilo de letra body*/
+body {background-color: #FFF; font-family:sans-serif;
+    margin: 0;
+}
+
+/*Fondo de pagina ecologico en caso de que no cargue se pone en blanco*/
+body{
+background-image: url(../IMG/3D/fondo.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #FFF;
+}
+
+/*Cabezal imagen repetitiva de filamentos*/
+div.goiburua {
+    position:relative;
+    overflow:auto;
+    height: 70px;
+    background-image: url(../IMG/goiburu.png);
+}
+
+/*Tabla color letra y color verde*/
+.td1, .th1 {border: 2px solid #b6b6b6;
+    color: #575a5a
+}
+
+/*Color fondo tabla automaticamente uno si uno no*/
+tr:nth-child(even) {
+    background-color: #dedede;
+}
+
+/*Color de fondo menu pagina web*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #063971;
+}
+
+/*Icono del menu tamaño*/
+.brand img {
+    width: 30px;
+    height: 20px;
+}
+
+/*Animacion line al acercar cursor*/
+.li_menu > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 1.5px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.2s;
+}
+
+/*Para que el menu se quede flotando en la izquierda*/
+ul.topnav li {float: left;}
+
+/*Menu letra mas recuadro con color*/
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Color de la linea en la animacion*/
+ul.tonopav li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: #57a639;
+}
+
+/*Color texto despues de poner el cursor encima*/
+ul.tonopav li > a:hover {
+    color: #57a639;
+}
+
+/*En index en el recuadro berde para marcar limites y color de letra*/
+.txt {color: white;
+    max-width: 40%;
+}
+
+/*Diseino general de pagina*/
+.text1 {margin-left: 70px;
+    max-width:50%;
+    padding-top: 20px;
+
+}
+
+/*Diseino general de pagina2*/
+.text2 {margin-left: 70px;
+    max-width:100%;
+    padding-top: 20px;
+
+}
+
+/*Fondo blanco para div informacion*/
+.white {
+    background-color: white;
+}
+
+/*Fondo blanco para div informacion con diferente espacio arriba para filamento inpresoras y calibracion*/
+.white2 {
+    background-color: white;
+    margin-top: 10%;
+}
+
+/*Div con otro diferente de distancia hacia arriba*/
+.textua {
+    background-color: rgb(235, 234, 234);
+    height: 400px;
+    min-width: 100%;
+    margin-top: -300px;
+}
+
+/*Utilizado en index para interior de textua*/
+.barru_textua {
+    width:50%;
+    padding: 5%;
+}
+
+/*Utilizado en filamentuak para la separacion y color de letra*/
+.p1 {color: #575a5a;
+    margin-left: 5%;
+}
+
+/*Imagen con fondo verde para index*/
+.text {margin-left: 3%;
+    height: 800px;
+    opacity: 90%;
+    background-repeat: no-repeat;
+    background-image:url(../IMG/texto.png);
+}
+
+/*En la tabla para poner bien los bordes y para alinear el texto en el centro*/
+table.center {text-align: center;
+    color: #bebcbb;
+    border-collapse: collapse;
+}
+
+/*Se utiliza para cambiar el tamaño de la imagen del curso en index*/
+.curso {
+    max-width: 25%;
+    margin-top: -200;
+    margin-left: 60%;
+}
+
+/*Se utiliza para cambiar el tamaño de la imagen del filamento ecologico*/
+.curso1 {
+    max-width: 25%;
+    margin-top: -200;
+    margin-left: 60%;
+}
+
+/*Se utiliza para cambiar el tamaño de la imagen de calibracion automatica*/
+.curso2 {
+    max-width: 35%;
+    margin-top: -300;
+    margin-left: 60%;
+}
+
+/*Espacios utilizados en la tabla de la impresora*/
+div.tabla {
+    padding: 50px;
+}
+
+/*Para quitar el estilo de la tabla de la impresora 3d*/
+.none {list-style: none;
+}
+
+/*Se utiliza para alinear el texto en la mitad poner el color de fondo en zul etc*/
+footer {
+    background-color: #063971;
+    text-align: center;
+    padding: 5px;
+    color: #FFF;
+    margin-bottom: 0%;
+}
+
+/*Se utiliza para poner el color del texto de el mail en blanco y sin lineas*/
+.footer {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*Se utiliza para al acercar el cursor se ponga en verde*/
+footer :hover {
+    color: #57a639;
+}
+
+/*se utiliza para dar tamaño a las imagenes de footer*/
+.sudo, .mail {width: 20px;}
